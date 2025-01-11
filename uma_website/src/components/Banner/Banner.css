@@ -1,0 +1,35 @@
+.banner-carousel {
+    width: 50%; /* Adjust the width as needed (e.g., 70%, 90%) */
+    height: 220px; /* Decrease the height for a smaller banner */
+    margin: 20px auto; /* Adds space above and below the banner */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Rounded corners for aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+  }
+  
+  .banner-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .slick-prev, .slick-next {
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .slick-prev {
+    left: 15px;
+  }
+  
+  .slick-next {
+    right: 15px;
+  }
+    
