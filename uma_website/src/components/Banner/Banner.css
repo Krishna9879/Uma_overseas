@@ -1,35 +1,107 @@
+/* Banner.css */
+.banner-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
 .banner-carousel {
-    width: 50%; /* Adjust the width as needed (e.g., 70%, 90%) */
-    height: 220px; /* Decrease the height for a smaller banner */
-    margin: 20px auto; /* Adds space above and below the banner */
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px; /* Optional: Rounded corners for aesthetics */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+  position: relative;
+  width: 100%;
+  height: 300px; /* Fixed height for desktop */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slider Controls Styling */
+.slick-dots {
+  bottom: 10px;
+  z-index: 1;
+}
+
+.slick-dots li button:before {
+  color: white;
+  opacity: 0.7;
+  font-size: 8px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .banner-carousel {
+    height: 250px;
   }
-  
-  .banner-carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    padding: 10px;
   }
-  
-  
-  .slick-prev, .slick-next {
-    color: #fff;
-    border-radius: 50%;
+
+  .banner-carousel {
+    height: 200px;
+    border-radius: 6px;
+  }
+
+  .slick-dots {
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
     padding: 5px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
   }
-  
-  .slick-prev {
-    left: 15px;
+
+  .banner-carousel {
+    height: 150px;
+    border-radius: 4px;
   }
-  
+
+  .slick-prev,
   .slick-next {
-    right: 15px;
+    display: none !important;
   }
-    
+}

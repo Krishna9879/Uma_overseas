@@ -1,0 +1,133 @@
+/* Footer.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer-section {
+    @apply border-b border-gray-600 last:border-b-0;
+  }
+
+  .footer-heading {
+    @apply py-3 text-lg font-semibold;
+  }
+
+  .footer-content {
+    @apply overflow-hidden transition-all duration-300;
+  }
+
+  .footer-list {
+    @apply px-2 py-1;
+  }
+
+  .footer-link {
+    @apply py-2 block text-gray-300 hover:text-white;
+  }
+
+  .social-icons {
+    @apply flex justify-center space-x-6 py-4;
+  }
+
+  .app-download-section {
+    @apply px-4;
+  }
+
+  .app-store-buttons img {
+    @apply h-8;
+  }
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 769px) {
+  .footer-section {
+    @apply mb-0;
+  }
+
+  .footer-heading {
+    @apply mb-4 text-lg font-semibold;
+  }
+
+  .footer-list {
+    @apply space-y-2.5;
+  }
+
+  .footer-link {
+    @apply text-gray-300 hover:text-white transition-colors duration-200;
+  }
+
+  .social-icons {
+    @apply flex space-x-4;
+  }
+
+  .app-store-buttons img {
+    @apply h-10;
+  }
+}
+
+/* Shared Styles */
+.footer-link:hover {
+  @apply transform translate-x-1;
+}
+
+.social-icon {
+  @apply text-gray-300 hover:text-white transition-colors duration-200;
+}
+
+.social-icon:hover {
+  @apply transform scale-110;
+}
+
+/* Animation Classes */
+.section-enter {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.section-enter-active {
+  max-height: 500px;
+  transition: max-height 300ms ease-in;
+}
+
+.section-exit {
+  max-height: 500px;
+}
+
+.section-exit-active {
+  max-height: 0;
+  transition: max-height 300ms ease-out;
+}
+
+/* Accordion Animation */
+.accordion-content {
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+}
+
+/* Custom Scrollbar */
+.footer-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.footer-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
