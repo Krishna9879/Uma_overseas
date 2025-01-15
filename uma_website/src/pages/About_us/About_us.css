@@ -1,0 +1,88 @@
+.head1{
+    background-image: url(https://santamonicaedu.in/wp-content/uploads/2022/01/santamonicabanner1-1-1.jpg);
+    height: 100%;
+    width: 100%;
+   }
+   .about{
+        color: white;
+        font-size: 5rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        padding-bottom: 3.5rem;
+   }
+   
+   .img1{
+       margin-left:5rem;
+       padding-top: 4rem;
+       height: 90%;
+   }
+   .h3{
+       font-size: 2rem;
+       margin-top: 3.5rem;
+       padding-left: 2rem;
+   }
+   .head2{
+       display: flex;
+       justify-content: center; 
+       align-items: center;    
+       padding-left: 5rem;
+       padding-right: 0rem;
+       width: 80%;
+       margin-bottom: 2rem;
+   }
+   .para1{
+       padding-left: 2rem;
+   }
+   .ab{
+       color: white;
+       
+   }
+   
+   .box1{
+       border: 2px solid;
+       height: 330px;
+       border: 1px solid;
+       margin-bottom: 2rem;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-style: none;
+       margin-top: 7rem;
+   }
+   .box2{
+       border:2px solid ;
+       height: 100%;
+       width: 80%;
+       border-radius: 2rem;
+       border-width: 0.1rem;
+       border-color: grey;
+       box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+   }
+   .ab{
+       color: black;
+       font-weight: 500;
+       font-size: 2rem;
+       margin-left:2rem;
+   }
+   .ul{
+       border: 2px solid;
+       width: 6rem;
+       margin-left: 2rem;
+       border-color: orange;
+   }
+   .para2{
+       position: relative;
+       left: 2rem;
+       top: 2rem;
+       font-size: 1.5vw; /* Font size relative to viewport width */
+       line-height: 1.6;  /* Good line height for readability */
+       word-wrap: break-word; /* Ensure long words break and don't overflow */
+       margin: 0;
+       margin-right: .2rem;
+   }
+   @media (max-width: 600px) {
+       .box2 p {
+           font-size: 4vw;
+       }
+   }

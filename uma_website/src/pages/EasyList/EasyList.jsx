@@ -106,7 +106,7 @@ const EasyList = () => {
           onMouseLeave={handleMouseLeave}
         >
           <Link 
-            to="/about" 
+            to="/About_us" 
             className={`menu-item ${location.pathname.startsWith('/about') || hoveredMenu === "about" ? 'active' : ''}`}
           >
             <FaInfoCircle className="menu-icon" />
