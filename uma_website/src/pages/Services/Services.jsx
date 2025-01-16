@@ -1,12 +1,14 @@
 import { useState } from 'react';
-import ielts from "../../assets/ielts.jpg"
-import exam from "../../assets/examservice.jpg"
-import money from "../../assets/moneyservice.jpg"
-import Tour from "../../assets/tourservice.jpg"
-import abroad from "../../assets/service01.jpg"
-import visa from "../../assets/visaservice.jpg"
+import { useNavigate } from 'react-router-dom';
+import ielts from "../../assets/ielts.jpg";
+import exam from "../../assets/examservice.jpg";
+import money from "../../assets/moneyservice.jpg";
+import Tour from "../../assets/tourservice.jpg";
+import abroad from "../../assets/service01.jpg";
+import visa from "../../assets/visaservice.jpg";
 
 export default function Services() {
+  const navigate = useNavigate(); // Hook for navigation
   const services = [
     {
       title: 'PTE/IELTS Training',
@@ -19,7 +21,8 @@ export default function Services() {
         'Basic Training',
         'Advanced Training'
       ],
-      image: ielts
+      image: ielts,
+      path: '/pteielts' // Add path for navigation
     },
     {
       title: 'International Tours',
@@ -32,7 +35,8 @@ export default function Services() {
         'Transport',
         'Activity Booking'
       ],
-      image: Tour
+      image: Tour,
+      path: '/tourpage' // Add path for navigation
     },
     {
       title: 'Visa Application',
@@ -44,9 +48,9 @@ export default function Services() {
         'Business Visa',
         'Document Verification',
         'Application Support',
-       
       ],
-      image: visa
+      image: visa,
+      path: '/visapage' // Add path for navigation
     },
     {
       title: 'Money Exchange',
@@ -59,7 +63,8 @@ export default function Services() {
         'Rate Alerts',
         'Financial Advice'
       ],
-      image: money
+      image: money,
+      path: '/moneyexchange' // Add path for navigation
     },
     {
       title: 'Exam Slot Booking',
@@ -72,7 +77,8 @@ export default function Services() {
         'GMAT Booking',
         'SAT Booking'
       ],
-      image: exam
+      image: exam,
+      path: '/exambooking' // If needed, add a path for this service
     },
     {
       title: 'Study Abroad',
@@ -85,15 +91,20 @@ export default function Services() {
         'Scholarship Support',
         'Pre-departure Brief'
       ],
-      image: abroad
+      image: abroad,
+      path: '/studyabroad' // If needed, add a path for this service
     }
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  const handleClick = (path) => {
+    navigate(path); // Navigate to the selected path
+  };
+
   return (
     <div className="py-12 bg-gray-50">
-      <div className="container px-4 mx-auto ">
+      <div className="container px-4 mx-auto">
         <h2 className="mb-12 text-4xl font-bold text-center">Choose Your Dream Career</h2>
         <div className="grid gap-8 md:grid-cols-3">
           {services.map((service, index) => (
@@ -102,6 +113,7 @@ export default function Services() {
               className="relative overflow-hidden transition-all duration-300 transform rounded-lg cursor-pointer h-80 hover:shadow-xl group"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
+              onClick={() => handleClick(service.path)} // Attach click handler
             >
               <img
                 src={service.image}

@@ -47,7 +47,7 @@ const EasyList = () => {
           <span>Home</span>
         </Link>
 
-        {/* Services Dropdown */}
+        {/* Services Link - Desktop Dropdown, Mobile Simple Link */}
         <div
           className="nav-dropdown"
           onMouseEnter={() => handleMouseEnter("services")}
@@ -60,20 +60,15 @@ const EasyList = () => {
             <FaCogs className="menu-icon" />
             <span>Services</span>
           </Link>
-          <div className={`dropdown-menu ${hoveredMenu === "services" || isMobileMenuOpen ? 'show' : ''}`}>
-            <Link to="/services/web-development" className="dropdown-item">
-              Web Development
-            </Link>
-            <Link to="/services/app-design" className="dropdown-item">
-              App Design
-            </Link>
-            <Link to="/services/seo" className="dropdown-item">
-              SEO Services
-            </Link>
+          {/* Dropdown only shown on desktop */}
+          <div className={`dropdown-menu desktop-only ${hoveredMenu === "services" ? 'show' : ''}`}>
+            <Link to="/services/web-development" className="dropdown-item">Web Development</Link>
+            <Link to="/services/app-design" className="dropdown-item">App Design</Link>
+            <Link to="/services/seo" className="dropdown-item">SEO Services</Link>
           </div>
         </div>
 
-        {/* Courses Dropdown */}
+        {/* Courses Link - Desktop Dropdown, Mobile Simple Link */}
         <div
           className="nav-dropdown"
           onMouseEnter={() => handleMouseEnter("courses")}
@@ -86,20 +81,15 @@ const EasyList = () => {
             <FaBookOpen className="menu-icon" />
             <span>Courses</span>
           </Link>
-          <div className={`dropdown-menu ${hoveredMenu === "courses" || isMobileMenuOpen ? 'show' : ''}`}>
-            <Link to="/courses/web-development" className="dropdown-item">
-              Web Development
-            </Link>
-            <Link to="/courses/graphic-design" className="dropdown-item">
-              Graphic Design
-            </Link>
-            <Link to="/courses/digital-marketing" className="dropdown-item">
-              Digital Marketing
-            </Link>
+          {/* Dropdown only shown on desktop */}
+          <div className={`dropdown-menu desktop-only ${hoveredMenu === "courses" ? 'show' : ''}`}>
+            <Link to="/courses/web-development" className="dropdown-item">Web Development</Link>
+            <Link to="/courses/graphic-design" className="dropdown-item">Graphic Design</Link>
+            <Link to="/courses/digital-marketing" className="dropdown-item">Digital Marketing</Link>
           </div>
         </div>
 
-        {/* About Dropdown */}
+        {/* About Link - Desktop Dropdown, Mobile Simple Link */}
         <div
           className="nav-dropdown"
           onMouseEnter={() => handleMouseEnter("about")}
@@ -112,16 +102,11 @@ const EasyList = () => {
             <FaInfoCircle className="menu-icon" />
             <span>About</span>
           </Link>
-          <div className={`dropdown-menu ${hoveredMenu === "about" || isMobileMenuOpen ? 'show' : ''}`}>
-            <Link to="/about/company" className="dropdown-item">
-              About Company
-            </Link>
-            <Link to="/about/team" className="dropdown-item">
-              Our Team
-            </Link>
-            <Link to="/about/mission" className="dropdown-item">
-              Our Mission
-            </Link>
+          {/* Dropdown only shown on desktop */}
+          <div className={`dropdown-menu desktop-only ${hoveredMenu === "about" ? 'show' : ''}`}>
+            <Link to="/about/company" className="dropdown-item">About Company</Link>
+            <Link to="/about/team" className="dropdown-item">Our Team</Link>
+            <Link to="/about/mission" className="dropdown-item">Our Mission</Link>
           </div>
         </div>
 

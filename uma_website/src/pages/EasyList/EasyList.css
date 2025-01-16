@@ -93,7 +93,7 @@
   .mobile-menu-button {
     display: block;
     position: absolute;
-    top: 1rem;
+    top: 0rem;
     right: 1rem;
   }
 
@@ -112,20 +112,14 @@
     width: 100%;
   }
 
-  .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    border-left: 2px solid #e2e8f0;
-  }
-
-  .dropdown-menu.show {
-    display: block;
+  /* Hide dropdowns on mobile */
+  .desktop-only {
+    display: none !important;
   }
 
   .menu-item {
     width: 100%;
+    justify-content: flex-start;
   }
 
   .menu-item:hover,
