@@ -45,7 +45,7 @@ export default function Services() {
         'Student Visa',
         'Work Visa',
         'Tourist Visa',
-        'Business Visa',
+        'Dependent Visa',
         'Document Verification',
         'Application Support',
       ],
@@ -58,7 +58,7 @@ export default function Services() {
       details: [
         'Major Currencies',
         'Exchange Rates',
-        'Wire Transfer',
+        'Secure transaction',
         'Cash Exchange',
         'Rate Alerts',
         'Financial Advice'
@@ -75,7 +75,7 @@ export default function Services() {
         'TOEFL Booking',
         'GRE Booking',
         'GMAT Booking',
-        'SAT Booking'
+        'Duolingo'
       ],
       image: exam,
       path: '/exambooking' // If needed, add a path for this service
@@ -89,7 +89,7 @@ export default function Services() {
         'Course Guidance',
         'Application Process',
         'Scholarship Support',
-        'Pre-departure Brief'
+        'Education loan'
       ],
       image: abroad,
       path: '/studyabroad' // If needed, add a path for this service

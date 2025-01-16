@@ -71,7 +71,7 @@ const Home = () => {
             {/* Left Column - Text Content */}
             <div className="space-y-4 text-black md:space-y-6">
               <h2 className="text-xl font-medium md:text-2xl">
-                Experience Life-Changing Opportunities with the
+                Experience Life-Changing Opportunities with Us!
               </h2>
               <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
                 <span className="text-transparent bg-gradient-to-b from-blue-800 to-blue-300 bg-clip-text">UMA</span> OVERSEAS & EDUCATION

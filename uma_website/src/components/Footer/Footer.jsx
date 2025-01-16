@@ -9,22 +9,22 @@ function Footer() {
 
   const sections = {
     quickLinks: [
-      "Home", "Eduflair Story", "Language Institute", "Ph.D. Consultation",
+      "Home", "Eduflair Story","Our courses","About us", "Language Institute", "Ph.D. Consultation",
       "Healthcare Studies", "Distance Education", "Online Education",
-      "Counselling & Mentoring", "YouTube Channel", "Contact", "Book Your e-Counselling"
+      "Counselling & Mentoring", "YouTube Channel", "Contact", "Book Your e-Counselling","Enquiry form","Locatrion"
     ],
     countries: [
-      "Canada", "Australia", "New Zealand", "USA", "UK", "Ireland",
+      "Canada", "Australia", "Russia","New Zealand", "USA", "UK", "Ireland",
       "Germany", "Switzerland", "Dubai", "Singapore", "Malaysia"
     ],
     immigration: [
-      "Canada", "Australia", "Quebec", "New Zealand", "USA",
-      "European Countries", "Scandinavian Countries"
+      "Canada", "Australia", "Russia", "New Zealand", "USA",
+      "European Countries", "Finland","Luxembourg"
     ],
     connect: [
       "Language Institute", "Ph.D. Consultation", "Healthcare Studies",
       "Distance Education", "Online Education", "Counselling & Mentoring",
-      "YouTube Channel"
+      "YouTube Channel","Instagram","E-mail","Location"
     ]
   };
 
