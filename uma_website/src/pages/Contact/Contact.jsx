@@ -37,7 +37,8 @@ const Contact = () => {
               <div>
                 <h3 className="mb-1 font-semibold text-gray-700">Head Office Location</h3>
                 <p className="text-gray-600">
-                  Caspia Overseas Studies, Vyttla Bypass, Above HDFC Bank, Vyttila, Kochi - 682019
+                111,112,Saidham Shoping Centre, Opp Metro P-127, Mahadev Nagar, Vastral, Ahmedabad.382418
+
                 </p>
               </div>
             </div>
@@ -49,7 +50,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="mb-1 font-semibold text-gray-700">Customer support</h3>
-                <p className="text-gray-600">+91 9446 511 115</p>
+                <p className="text-gray-600">+91 7359 58 5959
+                </p>
               </div>
             </div>
 
@@ -60,7 +62,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="mb-1 font-semibold text-gray-700">General questions</h3>
-                <p className="text-gray-600">info@caspiaedu.com</p>
+                <p className="text-gray-600">www.umaoverseasedu.com
+                </p>
                 <p className="text-gray-600">24/7 customer support</p>
               </div>
             </div>
@@ -78,9 +81,9 @@ const Contact = () => {
           </div>
 
           {/* Map */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[400px]">
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.952112108554!2d76.31893731479005!3d9.967054992878726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080da8e8b7e641%3A0x4b2f543def991cf3!2sVyttila%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1654862410000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14690.855469044353!2d72.64024294912724!3d22.997547025440394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87002491568f%3A0xbf9360e03eac5f0f!2sOpp.RTO%2C%20Vastral!5e0!3m2!1sen!2sin!4v1737126590146!5m2!1sen!2sin" 
               className="w-full h-full border-0"
               allowFullScreen=""
               loading="lazy"

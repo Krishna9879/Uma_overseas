@@ -44,7 +44,8 @@ const Home = () => {
     <div className="relative w-full">
       {/* WhatsApp Icon - Responsive positioning */}
       <a
-        href="https://wa.me/917359585959"
+        href="https://wa.me/917359 58 5959
+"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-50 p-2 text-white transition bg-green-500 rounded-full md:p-3 bottom-16 left-4 hover:bg-green-600"

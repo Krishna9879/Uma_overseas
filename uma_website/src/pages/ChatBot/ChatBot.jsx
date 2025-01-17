@@ -8,6 +8,7 @@ const ChatBot = () => {
   ]);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [mobile, setMobile] = useState('');
   const [message, setMessage] = useState('');
   const [isSending, setIsSending] = useState(false);
 
@@ -21,6 +22,7 @@ const ChatBot = () => {
       const templateParams = {
         user_name: name,
         user_email: email,
+        user_mobile:mobile,
         message: message,
         reply_to: email,
         to_name: 'UMA team',
@@ -42,6 +44,7 @@ const ChatBot = () => {
       setName('');
       setEmail('');
       setMessage('');
+      setMobile('');
       
     } catch (error) {
       setMessages(prev => [...prev, { 
@@ -100,6 +103,17 @@ const ChatBot = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your Email"
+              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              name="user_mobile"
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
+              placeholder="Your mobile"
               className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />

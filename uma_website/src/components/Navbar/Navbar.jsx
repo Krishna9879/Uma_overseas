@@ -41,7 +41,8 @@ function Navbar({ showEasyList = true }) {
               <a href="tel:+91758723456" className={`flex items-center ${
                 isScrolled ? 'text-white' : 'text-white'
               }`}>
-                <FaPhoneAlt className="mr-2" /> +91 7587 23456
+                <FaPhoneAlt className="mr-2" /> +91 7359 58 5959
+
               </a>
               <div className="flex space-x-4">
                 <a href="https://wa.me/91758723456" target="_blank" rel="noopener noreferrer"
