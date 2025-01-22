@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { FaBars, FaBookOpen, FaCogs, FaHome, FaInfoCircle, FaPhoneAlt, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-import { FaCogs, FaHome, FaBookOpen, FaInfoCircle, FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
 import "./EasyList.css";
 
 const EasyList = () => {
@@ -61,9 +61,7 @@ const EasyList = () => {
               <span>Services</span>
             </Link>
             <div className={`dropdown-menu desktop-only ${hoveredMenu === "services" ? 'show' : ''}`}>
-              <Link to="/services/web-development" className="dropdown-item">Web Development</Link>
-              <Link to="/services/app-design" className="dropdown-item">App Design</Link>
-              <Link to="/services/seo" className="dropdown-item">SEO Services</Link>
+             
             </div>
           </div>
 
@@ -81,9 +79,7 @@ const EasyList = () => {
               <span>Courses</span>
             </Link>
             <div className={`dropdown-menu desktop-only ${hoveredMenu === "courses" ? 'show' : ''}`}>
-              <Link to="/courses/web-development" className="dropdown-item">Web Development</Link>
-              <Link to="/courses/graphic-design" className="dropdown-item">Graphic Design</Link>
-              <Link to="/courses/digital-marketing" className="dropdown-item">Digital Marketing</Link>
+             
             </div>
           </div>
 
@@ -101,9 +97,7 @@ const EasyList = () => {
               <span>About</span>
             </Link>
             <div className={`dropdown-menu desktop-only ${hoveredMenu === "about" ? 'show' : ''}`}>
-              <Link to="/about/company" className="dropdown-item">About Company</Link>
-              <Link to="/about/team" className="dropdown-item">Our Team</Link>
-              <Link to="/about/mission" className="dropdown-item">Our Mission</Link>
+             
             </div>
           </div>
 

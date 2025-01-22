@@ -83,7 +83,7 @@ const Contact = () => {
           {/* Map */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14690.855469044353!2d72.64024294912724!3d22.997547025440394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87002491568f%3A0xbf9360e03eac5f0f!2sOpp.RTO%2C%20Vastral!5e0!3m2!1sen!2sin!4v1737126590146!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.07406070301016!2d72.65318724489562!3d23.00200819224762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e879d1decac39%3A0x8483c474b17564b0!2sUma%20Cyber%20Zone!5e0!3m2!1sen!2sin!4v1737469819111!5m2!1sen!2sin" 
               className="w-full h-full border-0"
               allowFullScreen=""
               loading="lazy"

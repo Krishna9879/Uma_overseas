@@ -44,8 +44,7 @@ const Home = () => {
     <div className="relative w-full">
       {/* WhatsApp Icon - Responsive positioning */}
       <a
-        href="https://wa.me/917359 58 5959
-"
+        href="https://wa.me/917359585959"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-50 p-2 text-white transition bg-green-500 rounded-full md:p-3 bottom-16 left-4 hover:bg-green-600"
@@ -60,7 +59,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-center bg-cover"
           style={{ 
-            backgroundImage: `url(${graduate})`,
+            backgroundImage:`url(${graduate})`,
             opacity: 0.2,
             mixBlendMode: "normal"
           }}
@@ -86,17 +85,32 @@ const Home = () => {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col gap-3 sm:flex-row md:gap-4">
-                <button className="w-full px-4 py-2 font-semibold text-white transition bg-purple-700 rounded-lg sm:w-auto md:px-6 md:py-3 hover:bg-purple-800">
-                  Call Now: +91 7359 58 5959
-                </button>
-                <button className="flex items-center justify-center w-full gap-2 px-4 py-2 font-semibold text-purple-900 transition bg-white rounded-lg sm:w-auto md:px-6 md:py-3 hover:bg-gray-100">
-                  Call Now: +91 7359 58 5959
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
+            
+<div className="flex flex-col gap-3 sm:flex-row md:gap-4">
+  {/* Call Now Button with tel: */}
+  <a 
+    href="tel:+917359585958" 
+    className="w-full px-4 py-2 font-semibold text-white transition bg-purple-700 rounded-lg sm:w-auto md:px-6 md:py-3 hover:bg-purple-800 text-center"
+  >
+    Call Now: +91 7359 58 5958
+  </a>
+
+
+
+  <a 
+  href="https://wa.me/919265946955" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="flex items-center justify-center w-full gap-2 px-4 py-2 font-semibold text-purple-900 transition bg-white rounded-lg sm:w-auto md:px-6 md:py-3 hover:bg-gray-100"
+>
+  What's app Now: +91 9265 94 6955
+  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+  </svg>
+</a>
+
+</div>
+
             </div>
 
             {/* Right Column - Animated Images */}

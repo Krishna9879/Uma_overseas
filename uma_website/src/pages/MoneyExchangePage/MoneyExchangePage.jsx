@@ -37,7 +37,7 @@ export  function MoneyExchangePage() {
          image: money
        },
        {
-         title: 'Wire Transfer',
+         title: 'Secure Transaction',
          description: 'Tailored support for selecting the most suitable courses.',
          image:money
        },

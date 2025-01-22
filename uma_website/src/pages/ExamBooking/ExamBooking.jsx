@@ -1,7 +1,7 @@
+import { AnimatePresence, motion } from 'framer-motion';
+import { BookOpen, Calendar, ChevronDown, Clock, GraduationCap, MapPin, Users, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { GraduationCap, Calendar, MapPin, BookOpen, Clock, Users, ChevronDown, ChevronUp, X } from 'lucide-react';
 
 const ExamCard = ({ exam, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -221,7 +221,7 @@ const ExamBookingPage = () => {
       ]
     },
     {
-      title: 'SAT Booking',
+      title: 'Duolingo',
       description: 'Simplified SAT registration process with expert guidance. We assist in test center selection, date booking, and provide complete registration support. Additional services include score reporting assistance and preparation guidance.',
       icon: Users,
       bgColor: 'from-indigo-500 to-indigo-600',

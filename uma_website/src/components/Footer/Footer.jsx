@@ -1,18 +1,13 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaChevronDown } from 'react-icons/fa';
-import playstore from '../../assets/image.png'; 
+import { FaChevronDown, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import applestore from '../../assets/applestore.png';
+import playstore from '../../assets/image.png';
 import './Footer.css';
 
 function Footer() {
   const [openSection, setOpenSection] = useState(null);
 
   const sections = {
-    quickLinks: [
-      "Home", "Eduflair Story","Our courses","About us", "Language Institute", "Ph.D. Consultation",
-      "Healthcare Studies", "Distance Education", "Online Education",
-      "Counselling & Mentoring", "YouTube Channel", "Contact", "Book Your e-Counselling","Enquiry form","Locatrion"
-    ],
     countries: [
       "Canada", "Australia", "Russia","New Zealand", "USA", "UK", "Ireland",
       "Germany", "Switzerland", "Dubai", "Singapore", "Malaysia"
@@ -21,11 +16,6 @@ function Footer() {
       "Canada", "Australia", "Russia", "New Zealand", "USA",
       "European Countries", "Finland","Luxembourg"
     ],
-    connect: [
-      "Language Institute", "Ph.D. Consultation", "Healthcare Studies",
-      "Distance Education", "Online Education", "Counselling & Mentoring",
-      "YouTube Channel","Instagram","E-mail","Location"
-    ]
   };
 
   const toggleSection = (section) => {
@@ -127,7 +117,7 @@ function Footer() {
 
         {/* Copyright */}
         <div className="pt-4 mt-6 text-sm text-center text-gray-400 border-t border-gray-600">
-          Copyright © {new Date().getFullYear()} UMA. All rights reserved.
+          Copyright © {new Date().getFullYear()} UMA. All rights reserved. And Web Design and Development is reserved by CodeCraft Technical Institute
         </div>
       </div>
     </footer>

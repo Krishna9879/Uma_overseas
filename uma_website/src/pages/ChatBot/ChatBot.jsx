@@ -1,5 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+
 import emailjs from '@emailjs/browser';
+
 
 const ChatBot = () => {
   const form = useRef();
@@ -22,7 +24,7 @@ const ChatBot = () => {
       const templateParams = {
         user_name: name,
         user_email: email,
-        user_mobile:mobile,
+        user_mobile: mobile,
         message: message,
         reply_to: email,
         to_name: 'UMA team',
@@ -59,16 +61,15 @@ const ChatBot = () => {
 
   return (
     <div className="flex flex-col h-full">
-      {/* Chat Messages */}
-      <div className="flex-1 p-4 overflow-y-auto">
-        <div className="space-y-4">
+      <div className="flex-1 p-2 overflow-y-auto sm:p-4">
+        <div className="space-y-3">
           {messages.map((message, index) => (
             <div
               key={index}
               className={`flex ${message.isBot ? 'justify-start' : 'justify-end'}`}
             >
               <div
-                className={`max-w-[80%] rounded-lg p-3 ${
+                className={`max-w-[85%] rounded-lg p-2 sm:p-3 text-sm sm:text-base ${
                   message.isBot
                     ? 'bg-gray-100 text-gray-900'
                     : 'bg-blue-500 text-white'
@@ -81,9 +82,8 @@ const ChatBot = () => {
         </div>
       </div>
 
-      {/* Contact Form */}
-      <div className="p-4 border-t bg-gray-50">
-        <form ref={form} onSubmit={sendEmail} className="space-y-3">
+      <div className="p-2 border-t sm:p-4 bg-gray-50">
+        <form ref={form} onSubmit={sendEmail} className="space-y-2 sm:space-y-3">
           <div>
             <input
               type="text"
@@ -91,7 +91,7 @@ const ChatBot = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your Name"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 text-sm border rounded-md sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
@@ -103,18 +103,19 @@ const ChatBot = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your Email"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 text-sm border rounded-md sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
+          
           <div>
             <input
-              type="number"
+              type="tel"
               name="user_mobile"
               value={mobile}
               onChange={(e) => setMobile(e.target.value)}
-              placeholder="Your mobile"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Mobile"
+              className="w-full p-2 text-sm border rounded-md sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
@@ -125,7 +126,7 @@ const ChatBot = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Your Message"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[100px]"
+              className="w-full p-2 text-sm sm:text-base border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[80px] sm:min-h-[100px]"
               required
             />
           </div>
@@ -133,7 +134,7 @@ const ChatBot = () => {
           <button
             type="submit"
             disabled={isSending}
-            className={`w-full px-4 py-2 text-white rounded-md transition-colors ${
+            className={`w-full px-4 py-2 text-sm sm:text-base text-white rounded-md transition-colors ${
               isSending 
                 ? 'bg-blue-300 cursor-not-allowed' 
                 : 'bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500'

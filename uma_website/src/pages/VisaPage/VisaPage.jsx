@@ -1,6 +1,6 @@
 import React from 'react';
+import { FaBriefcase, FaBuilding, FaClipboardList, FaFileAlt, FaPassport, FaPlane } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { FaPassport, FaBriefcase, FaPlane, FaBuilding, FaFileAlt, FaClipboardList } from 'react-icons/fa';
 import visa from "../../assets/visaservice.jpg";
 
 export function VisaPage() {
@@ -24,7 +24,7 @@ export function VisaPage() {
       image: visa
     },
     {
-      title: 'Business Visa',
+      title: 'Dependent Visa',
       description: 'Specialized support for business and corporate visas. Our business visa services cater to entrepreneurs and corporate professionals. We handle invitation letters, business documentation, and multi-entry visa requirements. Get expert assistance for trade shows, business meetings, and corporate events abroad.',
       icon: <FaBuilding className="text-3xl" />,
       image: visa
